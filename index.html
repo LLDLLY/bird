@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+<canvas width="800" height="500" style="border: 1px solid #000;"></canvas>
+
+
+<script src="game.js"></script>
+<script src="bird.js"></script>
+<script src="land.js"></script>
+<script src="sky.js"></script>
+<script src="Pipe.js"></script>
+
+
+<script>
+  var cs=document.querySelector('canvas');
+  var ctx=cs.getContext('2d');
+
+  var game=new Game({ctx:ctx,cs:cs});
+  game.start();
+  console.log(game);
+
+
+</script>
+</body>
+</html>
